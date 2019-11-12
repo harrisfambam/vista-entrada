@@ -1,0 +1,145 @@
+extends layout
+
+block navbar
+    +navbar('links')
+
+block content
+
+    div.page-links
+
+        div.page-header
+            h1 Helpful Links
+
+        div.panel-group(id="accordion")
+
+            div.panel.panel-default
+
+                div.panel-heading
+                    h4.panel-title
+                        a(data-toggle="collapse" data-parent="#accordion" href="#builders")
+                            span.glyphicon.glyphicon-chevron-down
+                            | Builders in Vista Entrada
+
+                div#builders(class="panel-collapse collapse")
+
+                    div.panel-body
+
+                        div.row
+
+                            div.col-md-3
+
+                                a.thumbnail(href="http://www.sandiabuilders.com/")
+
+                                    img.img-rounded(src=url('images/builders/sandia-builders.jpg'))
+
+                                a.thumbnail(href="http://www.stillbrooke.com/")
+
+                                    img.img-rounded(src=url('images/builders/stillbrook.jpg'))
+
+                                a.thumbnail(href="http://housemaxnm.com/")
+
+                                    img.img-rounded(src=url('images/builders/house-max.jpg'))
+
+                            div.col-md-3
+
+                                a.thumbnail(href="#")
+
+                                    img.img-rounded(src=url('images/builders/hayes-homes.jpg'))
+
+                                a.thumbnail(href="http://www.lowe-bohomes.com/")
+
+                                    img.img-rounded(src=url('images/builders/lowe-bo.jpg'))
+
+                                a.thumbnail(href="http://casaverdenm.com/")
+
+                                    img.img-rounded(src=url('images/builders/casa-verde.jpg'))
+
+                            div.col-md-6
+
+                                a.thumbnail(href="http://www.vineyardhomesnm.com/")
+
+                                    img.img-rounded(src=url('images/builders/vineyard-homes.jpg'))
+
+                                a.thumbnail(href="http://www.patriothomesnm.com/")
+
+                                    img.img-rounded(src=url('images/builders/patriot-homes.png'))
+
+                                a.thumbnail(href="http://www.summertreehomesnm.com/")
+
+                                    img.img-rounded(src=url('images/builders/summer-tree.jpg'))
+
+                                a.thumbnail(href="http://rancocustomhomes.com/")
+
+                                    img.img-rounded(src=url('images/builders/ranco-custom-homes.jpg'))
+
+            div.panel.panel-default
+
+                div.panel-heading
+                    h4.panel-title
+                        a(data-toggle="collapse" data-parent="#accordion" href="#lenders")
+                            span.glyphicon.glyphicon-chevron-down
+                            | Lenders for Vista Entrada
+
+                div#lenders(class="panel-collapse collapse")
+                    div.panel-body
+
+                        div.row
+
+                            div.col-md-4
+
+                                a.thumbnail(href="https://www.firstambank.com/personalbanking/")
+                                    img.img-rounded(src=url('images/lenders/first-american-bank.png'))
+
+
+            div.panel.panel-default
+
+                div.panel-heading
+                    h4.panel-title
+                        a(data-toggle="collapse" data-parent="#accordion" href="#insurance")
+                            span.glyphicon.glyphicon-chevron-down
+                            | Title Companies for Vista Entrada
+
+                div#insurance(class="panel-collapse collapse")
+
+                    div.panel-body
+
+                        div.row
+
+                            div.col-md-4
+
+                                a.thumbnail.first-american(href="http://www.firstam.com/title/nm/")
+                                    img.img-rounded(src=url('images/insurance/first-american-title.png'))
+
+                            div.col-md-4
+
+                                a.thumbnail(href="http://www.oldrepublictitle.com/nmnational")
+                                    img.img-rounded(src=url('images/insurance/old-republic.jpg'))
+
+                            div.col-md-4
+
+                                a.thumbnail.stewart-title(href="https://www.stewart.com/albuquerque")
+                                    img.img-rounded(src=url('images/insurance/stewart-title.png'))
+
+            div.panel.panel-default
+
+                div.panel-heading
+                    h4.panel-title
+                        a(href="http://www.rrrcc.org/")
+                            span.glyphicon.glyphicon-new-window
+                            | Rio Rancho Chamber of Commerce
+
+            div.panel.panel-default
+
+                div.panel-heading
+                    h4.panel-title
+                        a(href="http://www.rrps.net/")
+                            span.glyphicon.glyphicon-new-window
+                            | Rio Rancho Schools
+
+            div.panel.panel-default
+
+                div.panel-heading
+                    h4.panel-title
+                        a(href="http://www.visitalbuquerque.org/")
+                            span.glyphicon.glyphicon-new-window
+                            | New Mexico Tourism

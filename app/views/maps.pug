@@ -1,0 +1,44 @@
+extends layout
+
+block navbar
+    +navbar('maps')
+
+block content
+
+    div.page-maps
+
+        div.page-header
+            h1 Maps
+
+        div.well
+            p.lead.text-center.text-muted Click on a map for an enlarged PDF
+
+            div.row
+
+                div.col-md-6
+
+                    a.thumbnail(href=url('docs/vistaentradawest.pdf'), target='_blank')
+                        img.img-responsive(src=url('images/maps/vistaentradawest.png'))
+
+                div.col-md-6
+
+                    a.thumbnail(href=url('docs/vistaentradaeast.pdf'), target='_blank')
+                        img.img-responsive(src=url('images/maps/vistaentradaeast.png'))
+
+        div.well
+
+            p.lead.text-center.text-muted View avaialable lots
+
+            div.row
+
+                div.col-md-12
+
+                    div#map-canvas.map-canvas
+
+block append scripts
+    script(src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&key=AIzaSyDUjp83wRePSK7vsSknaN7WcfGIXeBysQE")
+    script(src=url('js/maps.js'))
+    script.
+        require('maps')({
+            lots: !{JSON.stringify(lots)}
+        });

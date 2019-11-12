@@ -1,0 +1,72 @@
+extends layout
+
+block navbar
+    +navbar('contact')
+
+block content
+
+    div.page-contact
+
+        div.page-header
+            h1 Contact Us
+
+        div.well
+            div.row
+
+                div.more-info.col-md-6
+
+                    p.lead.text-center.text-muted
+                        | Contact us for more information about
+                        img(src=url('images/logo.png'))
+
+
+                div.col-md-6.text-center
+
+                    div.row
+                        h3
+                            | Jim Kearns
+                            small (Realtor)
+
+                        dl.text-left
+                            dt
+                                span.glyphicon.glyphicon-envelope
+                                | Email
+                            dd
+                                a(href="mailto:jim@jimkearns.com") jim@jimkearns.com
+                            dt
+                                span.glyphicon.glyphicon-earphone
+                                | Phone
+
+                            dd
+                                a(href="tel:+15057107431") (505) 710-7431
+                            dt
+                                span.glyphicon.glyphicon-print
+                                | Fax
+                            dd (505) 892-1139
+                            dt
+                                span.glyphicon.glyphicon-home
+                                | Address
+                            dd
+                                address 4200 Meadowlark Ln. Suite #1<br>Rio Rancho, NM 87124
+
+                    div.row
+                        h3
+                            | Mark Conkling
+                            small (Broker)
+                        dl.text-left
+                            dt
+                                span.glyphicon.glyphicon-envelope
+                                | Email
+                            dd
+                                a(href="mailto:markconkling@gmail.com") markconkling@gmail.com
+                            dt
+                                span.glyphicon.glyphicon-earphone
+                                | Phone
+
+                            dd
+                                a(href="tel:+15058929794") (505) 892-9794
+                            dt
+                                span.glyphicon.glyphicon-home
+                                | Address
+                            dd
+                                addres 4200 Meadowlark Ln. Suite #1<br>Rio Rancho, NM 87124

@@ -1,0 +1,30 @@
+extends layout
+
+block navbar
+    +navbar('home')
+
+block content
+
+    div.page-home
+
+        div.jumbotron
+            div.row
+
+                div.col-md-6
+
+                    p.text-center
+                        img(width="254", height="150", src=url('images/logo.png'))
+
+                    p.lead
+                        |    Vista Entrada is a custom housing neighborhood in the heart of Rio Rancho, New Mexico. We offer view lots that are typically 1/2 acres in size or larger. Improvements include paved streets, city water & sewer. Additionally, underground utilities include electric, gas, telephone & cable television.
+
+                    p.lead
+                        a(href="/contact") Contact us
+                        |    now for more information.
+
+                div.col-md-6
+
+                    img.img-responsive.img-rounded(src=url('images/view-lots.jpg'))
+
+                    p.view-lots
+                        a.btn.btn-success.btn-lg(href="/maps") View Maps

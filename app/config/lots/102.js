@@ -1,0 +1,267 @@
+module.exports = [{
+    block: 102,
+    number: 1,
+    size: 0.5,
+    longitude: "35.315670",
+    latitude: "-106.604047",
+    price: "$75,000.00"
+}, {
+    block: 102,
+    number: 2,
+    size: 0.5,
+    longitude: "35.315460",
+    latitude: "-106.604133",
+    price: "$75,000.00"
+}, {
+    block: 102,
+    number: 3,
+    size: 0.5,
+    longitude: "35.315259",
+    latitude: "-106.604197",
+    price: "$75,000.00"
+}, {
+    block: 102,
+    number: 4,
+    size: 1.06,
+    longitude: "35.314917",
+    latitude: "-106.604197",
+    price: "$90,000.00"
+}, {
+    block: 102,
+    number: 5,
+    size: 1.22,
+    longitude: "35.314882",
+    latitude: "-106.603146",
+    price: "SOLD"
+}, {
+    block: 102,
+    number: 7,
+    size: 0.5,
+    longitude: "35.315381",
+    latitude: "-106.603049",
+    price: "$80,000.00"
+}, {
+    block: 102,
+    number: 8,
+    size: 0.5,
+    longitude: "35.315591",
+    latitude: "-106.603028",
+    price: "SOLD"
+}, {
+    block: 102,
+    number: 11,
+    size: 0.84,
+    longitude: "35.315040",
+    latitude: "-106.601965",
+    price: "$90,000.00"
+}, {
+    block: 102,
+    number: 12,
+    size: 0.96,
+    longitude: "35.314698",
+    latitude: "-106.601976",
+    price: "$90,000.00"
+}, {
+    block: 102,
+    number: 13,
+    size: 0.81,
+    longitude: "35.314725",
+    latitude: "-106.601000",
+    price: "$90,000.00"
+}, {
+    block: 102,
+    number: 14,
+    size: 0.84,
+    longitude: "35.315092",
+    latitude: "-106.600968",
+    price: "SOLD"
+}, {
+    block: 102,
+    number: 15,
+    size: 0.5,
+    longitude: "35.315381",
+    latitude: "-106.601032",
+    price: "$80,000.00"
+}, {
+    block: 102,
+    number: 17,
+    size: 0.98,
+    longitude: "35.315294",
+    latitude: "-106.600313",
+    price: "$90,000.00"
+}, {
+    block: 102,
+    number: 22,
+    size: 0.5,
+    longitude: "35.314655",
+    latitude: "-106.599551",
+    price: "$70,000.00"
+}, {
+    block: 102,
+    number: 24,
+    size: 0.5,
+    longitude: "35.314445",
+    latitude: "-106.600002",
+    price: "$70,000.00"
+}, {
+    block: 102,
+    number: 28,
+    size: 0.5,
+    longitude: "35.313727",
+    latitude: "-106.601150",
+    price: "$80,000.00"
+}, {
+    block: 102,
+    number: 32,
+    size: null,
+    longitude: "35.314199",
+    latitude: "-106.602437",
+    price: null
+}, {
+    block: 102,
+    number: 34,
+    size: 0.57,
+    longitude: "35.313560",
+    latitude: "-106.602234",
+    price: "$75,000.00"
+}, {
+    block: 102,
+    number: 35,
+    size: 0.61,
+    longitude: "35.313342",
+    latitude: "-106.602169",
+    price: "$75,000.00"
+}, {
+    block: 102,
+    number: 36,
+    size: null,
+    longitude: "35.313009",
+    latitude: "-106.603210",
+    price: "SOLD"
+}, {
+    block: 102,
+    number: 37,
+    size: 0.5,
+    longitude: "35.313254",
+    latitude: "-106.603253",
+    price: "$80,000.00"
+}, {
+    block: 102,
+    number: 38,
+    size: 0.5,
+    longitude: "35.313464",
+    latitude: "-106.603210",
+    price: "$80,000.00"
+}, {
+    block: 102,
+    number: 39,
+    size: null,
+    longitude: "35.313700",
+    latitude: "-106.603221",
+    price: null
+}, {
+    block: 102,
+    number: 40,
+    size: 0.5,
+    longitude: "35.313919",
+    latitude: "-106.603199",
+    price: "$80,000.00"
+}, {
+    block: 102,
+    number: 41,
+    size: 1.07,
+    longitude: "35.314243",
+    latitude: "-106.603156",
+    price: "SOLD"
+}, {
+    block: 102,
+    number: 42,
+    size: 1.15,
+    longitude: "35.314497",
+    latitude: "-106.603854",
+    price: "$79,900.00"
+}, {
+    block: 102,
+    number: 43,
+    size: null,
+    longitude: "35.314147",
+    latitude: "-106.604358",
+    price: "$85,000.00"
+}, {
+    block: 102,
+    number: 46,
+    size: 0.5,
+    longitude: "35.313412",
+    latitude: "-106.604261",
+    price: "$75,000.00"
+}, {
+    block: 102,
+    number: 47,
+    size: 0.5,
+    longitude: "35.313201",
+    latitude: "-106.604261",
+    price: "SOLD"
+}, {
+    block: 102,
+    number: 48,
+    size: 0.5,
+    longitude: "35.313009",
+    latitude: "-106.604283",
+    price: "SOLD"
+}, {
+    block: 102,
+    number: 49,
+    size: 0.5,
+    longitude: "35.312991",
+    latitude: "-106.605184",
+    price: "$70,000.00"
+}, {
+    block: 102,
+    number: 50,
+    size: 0.5,
+    longitude: "35.313210",
+    latitude: "-106.605184",
+    price: "$70,000.00"
+}, {
+    block: 102,
+    number: 53,
+    size: 0.5,
+    longitude: "106.605184",
+    latitude: "-106.605216",
+    price: "$70,000.00"
+}, {
+    block: 102,
+    number: 54,
+    size: 0.5,
+    longitude: "35.314094",
+    latitude: "-106.605216",
+    price: "$70,000.00"
+}, {
+    block: 102,
+    number: 55,
+    size: 0.77,
+    longitude: "35.314392",
+    latitude: "-106.605173",
+    price: "$80,000.00"
+}, {
+    block: 102,
+    number: 56,
+    size: 0.76,
+    longitude: "35.314690",
+    latitude: "-106.605195",
+    price: "$80,000.00"
+}, {
+    block: 102,
+    number: 57,
+    size: null,
+    longitude: "35.315057",
+    latitude: "-106.605163",
+    price: "SOLD"
+}, {
+    block: 102,
+    number: 60,
+    size: 0.5,
+    longitude: "35.315758",
+    latitude: "-106.605066",
+    price: "SOLD"
+}];

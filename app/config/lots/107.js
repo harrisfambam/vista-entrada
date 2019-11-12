@@ -1,0 +1,29 @@
+module.exports = [{
+    block: 107,
+    number: 19,
+    size: 1.1,
+    longitude: "35.311453",
+    latitude: "-106.597728",
+    price: "$95,000.00"
+}, {
+    block: 107,
+    number: 75,
+    size: 1.0,
+    longitude: "35.311016",
+    latitude: "-106.595636",
+    price: "$75,000.00"
+}, {
+    block: 107,
+    number: 83,
+    size: 0.5,
+    longitude: "35.310210",
+    latitude: "-106.594273",
+    price: "$55,000.00"
+}, {
+    block: 107,
+    number: 94,
+    size: null,
+    longitude: "35.312390",
+    latitude: "-106.596043",
+    price: "$120,000.00"
+}];

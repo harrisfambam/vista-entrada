@@ -1,0 +1,294 @@
+@import 'vendor/bootstrap.less';
+@import 'vendor/bootstrap-theme.less';
+
+@orange: #f48d48;
+@blue: #487cf4;
+
+@navbarBG: lighten(@blue, 0%);
+@navbarBorder: darken(@blue, 10%);
+@navbarActive: lighten(@blue, 5%);
+@navbarHover: lighten(@blue, 0%);
+
+html, body {
+    font-family: "Palatino Linotype", sans-serif;
+    margin: 0;
+    padding: 5px 0 0 0;
+    height: 100%;
+}
+
+#main {
+    min-height: 100%;
+    position: relative;
+}
+
+#main-content {
+    height: 100%;
+    padding-bottom: 50px;
+}
+
+div.footer {
+    border-top: solid 1px #eee;
+    position: absolute;
+    bottom: 0px;
+    height: 49px;
+    line-height: 49px;
+
+    a.disclaimer {
+        padding-right: 5px;
+    }
+    p {
+        margin: 0px;
+    }
+}
+
+div.navbar-vista-entrada {
+    @navbarFontColor: #fff;
+
+    background-image: -webkit-linear-gradient(top,@navbarBG 0,darken(@navbarBG, 10%) 100%);
+    background-image: linear-gradient(to bottom,@navbarBG 0,darken(@navbarBG, 10%) 100%);
+    background-repeat: repeat-x;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.15),0 1px 5px rgba(0,0,0,.25);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.15),0 1px 5px rgba(0,0,0,.25);
+    border-color: @navbarBorder;
+
+    a.navbar-brand {
+
+        img {
+            position: relative;
+            top: -5px;
+            margin-right: 5px;
+        }
+
+        &:visited, &:active {
+            color: @navbarFontColor;
+        }
+    }
+
+    li > a {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    li.active {
+        background-color: @navbarActive;
+    }
+
+    a, a:visited, a:active {
+        color: @navbarFontColor;
+    }
+
+    a:hover {
+        background-color: @navbarHover !important;
+    }
+
+    .navbar-toggle {
+        border-color: @navbarBorder;
+
+        .icon-bar {
+            background-color: @orange;
+        }
+    }
+}
+
+.view-lots {
+    text-align: center;
+    padding: 25px 0px;
+}
+
+.page-guidelines-covenants {
+
+    ol ol {
+        list-style-type: upper-alpha
+    }
+}
+
+.page-contact {
+    h3 small {
+        padding-left: 5px;
+    }
+
+    span.glyphicon {
+        padding-right: 5px;
+    }
+
+    dl {
+        display: inline-block;
+    }
+
+    dt, dd {
+        float:left;
+    }
+
+    dt {
+        clear: both;
+        width: 150px;
+    }
+
+    div.more-info {
+        padding-top: 50px;
+    }
+}
+
+.page-links {
+
+    span.glyphicon {
+        margin-right: 10px;
+    }
+
+    #insurance {
+
+        .first-american img {
+            padding: 10px 0px;
+        }
+
+        .stewart-title img {
+            padding: 22px 0px;
+        }
+
+    }
+}
+
+.page-maps {
+
+    p.explore, p.explore-tablet {
+
+        &.explore {
+            padding-top: 150px;
+        }
+
+        span.glyphicon {
+            display:block;
+            font-size: 3.0em;
+        }
+
+    }
+
+    p.explore-tablet, p.explore-phone {
+        padding-top: 25px;
+
+        &.explore-phone .glyphicon {
+            margin-right: 5px;
+        }
+    }
+
+}
+
+.map-canvas {
+    border: solid 1px #ccc;
+    height: 400px;
+}
+
+.lot-marker {
+    h4 {
+        margin-top: 0px;
+    }
+    .glyphicon {
+        margin-right: 5px;
+    }
+}
+
+table.sortable {
+
+    th[role=columnheader]:not(.no-sort) {
+        cursor: pointer;
+    }
+    
+    th[role=columnheader]:not(.no-sort):after {
+        content: '';
+        float: right;
+        margin-top: 7px;
+        border-width: 0 4px 4px;
+        border-style: solid;
+        border-color: #404040 transparent;
+        visibility: hidden;
+        opacity: 0;
+        -ms-user-select: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+    }
+    
+    th[aria-sort=ascending]:not(.no-sort):after {
+        border-bottom: none;
+        border-width: 4px 4px 0;
+    }
+    
+    th[aria-sort]:not(.no-sort):after {
+        visibility: visible;
+        opacity: 0.4;
+    }
+    
+    th[role=columnheader]:not(.no-sort):hover:after {
+        visibility: visible;
+        opacity: 1;
+    }
+
+}
+
+// override default media query to toggle mode earlier
+@media (max-width: 991px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .navbar-collapse.collapse.in {
+        display: block!important;
+    }
+}
+
+@media print {
+  div.navbar {
+    display: none;
+  }
+
+  div.footer {
+    display: none;
+  }
+
+  p.sort-description {
+    display: none;
+  }
+
+  th.no-sort, td.view-lot {
+    display: none;
+  }
+
+  .page-header {
+    border: none;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  h1 {
+    font-size: 25px;
+    font-weight: bold;
+    border: none;
+    padding: 0px 0px 25px 0px;
+    margin: 0px;
+  }
+  table {
+    font-size: 10px;
+  }
+}

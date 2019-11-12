@@ -1,0 +1,34 @@
+{
+    "version": 2,
+    "name": "vista-entrada",
+    "scope": "harris",
+    "env": {
+        "NODE_ENV": "production",
+        "SPREADSHEET_ID": "@vista-entrada-spreadsheet-id"
+    },
+    "build": {
+        "env": {
+            "NODE_ENV": "production"
+        }
+    },
+    "builds": [
+        { 
+            "src": "index.js", 
+            "use": "@now/node", 
+            "config": {
+                "includeFiles": [
+                    "rev-manifest.json",
+                    "app/views/**"
+                ]
+            }
+        },
+        { "src": "public_dist/**", "use": "@now/static", "config": { "includeFiles": "public_dist/**"} }
+    ],
+    "routes": [
+        {"src": "/assets/(.*)", "dest": "/public_dist/$1"},
+        { "src": "/.*", "dest": "index.js" }
+    ],
+    "github": {
+        "enabled": false
+    }
+}

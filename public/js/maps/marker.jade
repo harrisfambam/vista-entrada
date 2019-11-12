@@ -1,0 +1,16 @@
+div.lot-marker
+    h4.text-muted Block ##{lot.block} - Lot ##{lot.number}
+
+    div
+        label Price:&nbsp;
+        span #{lot.price}
+
+    if(lot.size)
+        div
+            label Size:&nbsp;
+            span #{lot.size.toFixed(2)} acres
+
+    div
+        a(href="/lot/"+lot.block+"/"+lot.number)
+            span.glyphicon.glyphicon-info-sign
+            | more info

@@ -1,0 +1,37 @@
+extends layout
+
+block navbar
+    +navbar()
+
+block content
+
+    div.page-contact
+
+        div.page-header
+            h1 Lot Information
+
+        div.lead.text-center
+            dl.dl-horizontal
+                dt Block:
+                dd #{lot.block}
+                dt Number:
+                dd #{lot.number}
+                dt Price:
+                dd #{lot.price}
+                if(lot.size)
+                    dt Size:
+                    dd #{lot.size.toFixed(2)} acres
+
+        div.lead.text-center
+            a(href="/contact") Contact us
+            | &nbsp;for more information
+
+        div#map-canvas(style="height:400px;")
+
+block append scripts
+    script(src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&key=AIzaSyDUjp83wRePSK7vsSknaN7WcfGIXeBysQE")
+    script(src=url('js/lot-map.js'))
+    script.
+        require('lot-map')({
+            lot: !{JSON.stringify(lot)}
+        });

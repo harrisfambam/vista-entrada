@@ -1,0 +1,36 @@
+mixin navbar(active)
+    div.navbar.navbar-vista-entrada(role="navigation")
+        div.container-fluid
+            div.navbar-header
+                button(type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse")
+                    span.sr-only Toggle navigation
+                    span.icon-bar
+                    span.icon-bar
+                    span.icon-bar
+                a.navbar-brand(href="/")
+                    img.pull-left(width="30", height="30", src=url('images/sun-small.png'))
+                    |    Vista Entrada
+
+            div.navbar-collapse.collapse
+                ul.nav.navbar-nav
+
+                    li(class=active=='contact'?'active':'')
+                        a(href="/contact") Contact
+
+                    li(class=active=='guidelines-covenants'?'active':'')
+                        a(href="/guidelines-covenants") Guidelines & Covenants
+
+                    li(class=active=='maps'?'active':'')
+                        a(href="/maps") Maps
+
+                    li(class=active=='price-list'?'active':'')
+                        a(href="/price-list") Price List
+
+                    li(class=active=='purchase-agreement'?'active':'')
+                        a(href=url('docs/vista-entrada-purchase-agreement.pdf')) Purchase Agreement
+
+                    li(class=active=='other-properties'?'active':'')
+                        a(href="/other-properties") Other Properties
+
+                    li(class=active=='links'?'active':'')
+                        a(href="/links") Links
